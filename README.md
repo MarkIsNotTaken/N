@@ -9,6 +9,6 @@
   ```
   
 # Libraries Used:
-  BeautifulSoup
-  urllib2
-  datetime
+ - BeautifulSoup
+ - urllib2
+ - datetime
