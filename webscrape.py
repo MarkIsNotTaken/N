@@ -4,7 +4,9 @@ import datetime
 
 def webScrape(url) :
   webInf = urllib2.urlopen(url)
+  print (webInf)
   resultInf = webInf.read()
+  print (resultInf)
   soup = BeautifulSoup(resultInf, "html.parser")
   bitCoinPrice = "$" + soup.find(attrs={"class" : "text-large2"}).get_text()
   currTime = datetime.datetime.now()
