@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import urllib2
 import datetime
+
 def webScrape(url) :
   webInf = urllib2.urlopen(url)
   resultInf = webInf.read()
