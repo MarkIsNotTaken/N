@@ -8,8 +8,6 @@ def webScrape(url) :
   soup = BeautifulSoup(resultInf, "html.parser")
   bitCoinPrice = "$" + soup.find(attrs={"class" : "text-large2"}).get_text()
   currTime = datetime.datetime.now()
-  # print bitCoinPrice
-  # print currTime
   with open("bitcoinprice.txt", "ab") as newFile:
         newFile.write(bitCoinPrice + ", " + str(currTime) + "\n")
 
